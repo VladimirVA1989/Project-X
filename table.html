@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title></title>
+    <meta content="">
+    <meta charset="UTF-8">
+    <script src="./RG.js"></script>
+  </head>
+  <body>
+  <style>
+    .rg-cell {
+      border: 1px solid white;
+      background: #8dbdb8;
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+    }
+    .rg-row {
+
+    }
+  </style>
+    <div id='app' style="display: inline-block">
+    </div>
+    </div>
+    <script>
+        var rg = new RakoGrid();
+        var skeleton = rg.createGridSkeleton(2, 2);
+        var grid = rg.buildGrid(skeleton, document.getElementById('app'));
+    </script>
+  </body>
+</html>
